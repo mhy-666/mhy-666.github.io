@@ -1,0 +1,358 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>自定义代码配色 | 个人主页</title><meta name="author" content="mhy&amp;&amp;lxq"><meta name="copyright" content="mhy&amp;&amp;lxq"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="在Butterfly-安裝文檔-三-主題配置中已經介紹瞭如何使用自定義代碼配色。 這篇文章是使用自定義代碼配色的實例教程。Highlight 以使用Kimbie dark主題配色為例子配置hljs為true 修改Hexo根目錄下的_config.yml highlight: enable: true line_number: true auto_detect: false tab_replace:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="自定义代码配色">
+<meta property="og:url" content="http://example.com/2022/05/04/blog3/index.html">
+<meta property="og:site_name" content="个人主页">
+<meta property="og:description" content="在Butterfly-安裝文檔-三-主題配置中已經介紹瞭如何使用自定義代碼配色。 這篇文章是使用自定義代碼配色的實例教程。Highlight 以使用Kimbie dark主題配色為例子配置hljs為true 修改Hexo根目錄下的_config.yml highlight: enable: true line_number: true auto_detect: false tab_replace:">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/%E5%9C%B0%E7%90%83%E4%B9%8B%E7%99%8C1.jpg">
+<meta property="article:published_time" content="2022-05-03T17:25:12.000Z">
+<meta property="article:modified_time" content="2022-05-04T04:27:11.468Z">
+<meta property="article:author" content="mhy&amp;&amp;lxq">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/%E5%9C%B0%E7%90%83%E4%B9%8B%E7%99%8C1.jpg"><link rel="shortcut icon" href="/img/TJ.jpg"><link rel="canonical" href="http://example.com/2022/05/04/blog3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '自定义代码配色',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-05-04 12:27:11'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/%E5%9C%B0%E7%90%83%E4%B9%8B%E7%99%8C1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page" href="/2022/05/03/award/"><i class="fa-fw fas fa-crown"></i><span> Award</span></a></div><div class="menus_item"><a class="site-page" href="/2022/05/03/memory/"><i class="fa-fw fas fa-image"></i><span> Memory</span></a></div><div class="menus_item"><a class="site-page" href="/2022/05/03/track/"><i class="fa-fw fas fa-school"></i><span> Track</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">个人主页</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page" href="/2022/05/03/award/"><i class="fa-fw fas fa-crown"></i><span> Award</span></a></div><div class="menus_item"><a class="site-page" href="/2022/05/03/memory/"><i class="fa-fw fas fa-image"></i><span> Memory</span></a></div><div class="menus_item"><a class="site-page" href="/2022/05/03/track/"><i class="fa-fw fas fa-school"></i><span> Track</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">自定义代码配色</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-05-03T17:25:12.000Z" title="Created 2022-05-04 01:25:12">2022-05-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-05-04T04:27:11.468Z" title="Updated 2022-05-04 12:27:11">2022-05-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="自定义代码配色"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>在Butterfly-安裝文檔-三-主題配置中已經介紹瞭如何使用自定義代碼配色。</p>
+<p>這篇文章是使用自定義代碼配色的實例教程。<br>Highlight</p>
+<p>以使用Kimbie dark主題配色為例子<br>配置hljs為true</p>
+<p>修改Hexo根目錄下的_config.yml</p>
+<p>highlight:<br> enable: true<br> line_number: true<br> auto_detect: false<br> tab_replace:<br> hljs: true</p>
+<p>配置highlight_theme為false</p>
+<p>修改主題配置文件</p>
+<p>highlight_theme: false</p>
+<p>下載和修改CSS文件</p>
+<p>在Github上找到這個CSS</p>
+<p>在Hexo的根目錄source文件夾下創立一個self文件夾，在self文件夾創建一個Kimbiedark.css文件</p>
+<p>把Github上Kimbie dark的CSS代碼複製到Kimbiedark.css去。（你也可以直接從Github上下載這個CSS）</p>
+<p>Kimbiedark.css代碼如下</p>
+<p>&#x2F;*<br>    Name:     Kimbie (dark)<br>    Author:   Jan T. Sott<br>    License:  Creative Commons Attribution-ShareAlike 4.0 Unported License<br>    URL:      <a target="_blank" rel="noopener" href="https://github.com/idleberg/Kimbie-highlight.js">https://github.com/idleberg/Kimbie-highlight.js</a><br>*&#x2F;</p>
+<p>&#x2F;* Kimbie Comment *&#x2F;<br>.hljs-comment,<br>.hljs-quote {<br>  color: #d6baad;<br>}</p>
+<p>&#x2F;* Kimbie Red *&#x2F;<br>.hljs-variable,<br>.hljs-template-variable,<br>.hljs-tag,<br>.hljs-name,<br>.hljs-selector-id,<br>.hljs-selector-class,<br>.hljs-regexp,<br>.hljs-meta {<br>  color: #dc3958;<br>}</p>
+<p>&#x2F;* Kimbie Orange *&#x2F;<br>.hljs-number,<br>.hljs-built_in,<br>.hljs-builtin-name,<br>.hljs-literal,<br>.hljs-type,<br>.hljs-params,<br>.hljs-deletion,<br>.hljs-link {<br>  color: #f79a32;<br>}</p>
+<p>&#x2F;* Kimbie Yellow *&#x2F;<br>.hljs-title,<br>.hljs-section,<br>.hljs-attribute {<br>  color: #f06431;<br>}</p>
+<p>&#x2F;* Kimbie Green *&#x2F;<br>.hljs-string,<br>.hljs-symbol,<br>.hljs-bullet,<br>.hljs-addition {<br>  color: #889b4a;<br>}</p>
+<p>&#x2F;* Kimbie Purple *&#x2F;<br>.hljs-keyword,<br>.hljs-selector-tag,<br>.hljs-function {<br>  color: #98676a;<br>}</p>
+<p>.hljs {<br>  display: block;<br>  overflow-x: auto;<br>  background: #221a0f;<br>  color: #d3af86;<br>  padding: 0.5em;<br>}</p>
+<p>.hljs-emphasis {<br>  font-style: italic;<br>}</p>
+<p>.hljs-strong {<br>  font-weight: bold;<br>}</p>
+<p>修改這個CSS文件為</p>
+<p>&#x2F;*<br>    Name:     Kimbie (dark)<br>    Author:   Jan T. Sott<br>    License:  Creative Commons Attribution-ShareAlike 4.0 Unported License<br>    URL:      <a target="_blank" rel="noopener" href="https://github.com/idleberg/Kimbie-highlight.js">https://github.com/idleberg/Kimbie-highlight.js</a><br>*&#x2F;</p>
+<h2 id="x2F-新添加的內容"><a href="#x2F-新添加的內容" class="headerlink" title="&#x2F;* 新添加的內容"></a>&#x2F;* 新添加的內容</h2><p>  –hl-color                  代碼框字體顔色 【必須】 (把下面.hljs的 color複製到這裏來)<br>  –hl-bg                     代碼框背景色 【必須】 (把下面.hljs的 background複製到這裏來)<br>  –hltools-bg: #321a0f       代碼框頂部工具欄背景色 【可選】(如果你關掉了 copy、lang 和 shrink,可不用配置這個）<br>  –hltools-color: #fff       代碼框頂部工具欄字體顔色 【可選】(如果你關掉了 copy、lang 和 shrink,可不用配置這個）<br>  –hlnumber-bg: #221a0f      代碼框行數背景色 【可選】(如果已經關掉 line_number,可以不用配置這個)<br>  –hlnumber-color: #fff      代碼框行數字體顔色 【可選】 (如果已經關掉 line_number,可以不用配置這個)<br>  –hlscrollbar-bg: #d3af86   代碼框滾動條顔色 【可選】（默認為主題主顔色）<br>  –hlexpand-bg: #d3af86      代碼框底部展開背景色 【可選】(如果已經關掉 highlight_height_limit,可以不用配置這個)<br>*&#x2F;</p>
+<p>:root {<br>  –hl-color: #d3af86;<br>  –hl-bg: #221a0f;<br>  –hltools-bg: #321a0f;<br>  –hltools-color: #fff;<br>  –hlnumber-bg: #221a0f;<br>  –hlnumber-color: #fff;<br>  –hlscrollbar-bg: #d3af86;<br>  –hlexpand-bg: #d3af86;<br>}</p>
+<p>&#x2F;* Kimbie Comment *&#x2F;<br>.hljs-comment,<br>.hljs-quote {<br>  color: #d6baad;<br>}</p>
+<p>&#x2F;* Kimbie Red *&#x2F;<br>.hljs-variable,<br>.hljs-template-variable,<br>.hljs-tag,<br>.hljs-name,<br>.hljs-selector-id,<br>.hljs-selector-class,<br>.hljs-regexp,<br>.hljs-meta {<br>  color: #dc3958;<br>}</p>
+<p>&#x2F;* Kimbie Orange *&#x2F;<br>.hljs-number,<br>.hljs-built_in,<br>.hljs-builtin-name,<br>.hljs-literal,<br>.hljs-type,<br>.hljs-params,<br>.hljs-deletion,<br>.hljs-link {<br>  color: #f79a32;<br>}</p>
+<p>&#x2F;* Kimbie Yellow *&#x2F;<br>.hljs-title,<br>.hljs-section,<br>.hljs-attribute {<br>  color: #f06431;<br>}</p>
+<p>&#x2F;* Kimbie Green *&#x2F;<br>.hljs-string,<br>.hljs-symbol,<br>.hljs-bullet,<br>.hljs-addition {<br>  color: #889b4a;<br>}</p>
+<p>&#x2F;* Kimbie Purple *&#x2F;<br>.hljs-keyword,<br>.hljs-selector-tag,<br>.hljs-function {<br>  color: #98676a;<br>}</p>
+<p>&#x2F;* 更改的內容 把.hljs改為 #article-container figure.highlight .hljs <em>、<br>&#x2F;</em> ————————————- *&#x2F;<br>#article-container figure.highlight .hljs {<br>  display: block;<br>  overflow-x: auto;<br>  background: #221a0f;<br>  color: #d3af86;<br>  padding: 0.5em;<br>}</p>
+<p>.hljs-emphasis {<br>  font-style: italic;<br>}</p>
+<p>.hljs-strong {<br>  font-weight: bold;<br>}</p>
+<p>引入文件</p>
+<p>修改主題配置文件</p>
+<p>inject:<br>  head:<br>    - <link rel="stylesheet" href="/self/Kimbiedark.css"></p>
+<p>運行Hexo</p>
+<p>運行Hexo後，應該可以看到修改的效果</p>
+<p>Prismjs</p>
+<p>以使用prism-duotone-light主題配色為例子<br>配置highlight_theme為false</p>
+<p>修改主題配置文件</p>
+<p>highlight_theme: false</p>
+<p>下載和修改CSS文件</p>
+<p>在Github上找到這個CSS</p>
+<p>在 Hexo 的根目錄source文件夾下創立一個self文件夾，在self文件夾創建一個duotone.css文件</p>
+<p>把Github上prism-duotone-light的 CSS 代碼複製到&#96;&#96;duotone.css&#96;去。（你也可以直接從Github上下載這個CSS）</p>
+<p>prism-duotone-light代碼如下</p>
+<p>&#x2F;*<br>Name:   Duotone Light<br>Author: Simurai, adapted from DuoTone themes for Atom (<a target="_blank" rel="noopener" href="http://simurai.com/projects/2016/01/01/duotone-themes">http://simurai.com/projects/2016/01/01/duotone-themes</a>)</p>
+<p>Conversion: Bram de Haan (<a target="_blank" rel="noopener" href="http://atelierbram.github.io/Base2Tone-prism/output/prism/prism-base2tone-morning-light.css">http://atelierbram.github.io/Base2Tone-prism/output/prism/prism-base2tone-morning-light.css</a>)<br>Generated with Base16 Builder (<a target="_blank" rel="noopener" href="https://github.com/base16-builder/base16-builder">https://github.com/base16-builder/base16-builder</a>)<br>*&#x2F;</p>
+<p>code[class*&#x3D;”language-“],<br>pre[class*&#x3D;”language-“] {<br>    font-family: Consolas, Menlo, Monaco, “Andale Mono WT”, “Andale Mono”, “Lucida Console”, “Lucida Sans Typewriter”, “DejaVu Sans Mono”, “Bitstream Vera Sans Mono”, “Liberation Mono”, “Nimbus Mono L”, “Courier New”, Courier, monospace;<br>    font-size: 14px;<br>    line-height: 1.375;<br>    direction: ltr;<br>    text-align: left;<br>    white-space: pre;<br>    word-spacing: normal;<br>    word-break: normal;</p>
+<pre><code>-moz-tab-size: 4;
+-o-tab-size: 4;
+tab-size: 4;
+
+-webkit-hyphens: none;
+-moz-hyphens: none;
+-ms-hyphens: none;
+hyphens: none;
+background: #faf8f5;
+color: #728fcb;
+</code></pre>
+<p>}</p>
+<p>pre &gt; code[class*&#x3D;”language-“] {<br>    font-size: 1em;<br>}</p>
+<p>pre[class*&#x3D;”language-“]::-moz-selection, pre[class*&#x3D;”language-“] ::-moz-selection,<br>code[class*&#x3D;”language-“]::-moz-selection, code[class*&#x3D;”language-“] ::-moz-selection {<br>    text-shadow: none;<br>    background: #faf8f5;<br>}</p>
+<p>pre[class*&#x3D;”language-“]::selection, pre[class*&#x3D;”language-“] ::selection,<br>code[class*&#x3D;”language-“]::selection, code[class*&#x3D;”language-“] ::selection {<br>    text-shadow: none;<br>    background: #faf8f5;<br>}</p>
+<p>&#x2F;* Code blocks <em>&#x2F;<br>pre[class</em>&#x3D;”language-“] {<br>    padding: 1em;<br>    margin: .5em 0;<br>    overflow: auto;<br>}</p>
+<p>&#x2F;* Inline code <em>&#x2F;<br>:not(pre) &gt; code[class</em>&#x3D;”language-“] {<br>    padding: .1em;<br>    border-radius: .3em;<br>}</p>
+<p>.token.comment,<br>.token.prolog,<br>.token.doctype,<br>.token.cdata {<br>    color: #b6ad9a;<br>}</p>
+<p>.token.punctuation {<br>    color: #b6ad9a;<br>}</p>
+<p>.token.namespace {<br>    opacity: .7;<br>}</p>
+<p>.token.tag,<br>.token.operator,<br>.token.number {<br>    color: #063289;<br>}</p>
+<p>.token.property,<br>.token.function {<br>    color: #b29762;<br>}</p>
+<p>.token.tag-id,<br>.token.selector,<br>.token.atrule-id {<br>    color: #2d2006;<br>}</p>
+<p>code.language-javascript,<br>.token.attr-name {<br>    color: #896724;<br>}</p>
+<p>code.language-css,<br>code.language-scss,<br>.token.boolean,<br>.token.string,<br>.token.entity,<br>.token.url,<br>.language-css .token.string,<br>.language-scss .token.string,<br>.style .token.string,<br>.token.attr-value,<br>.token.keyword,<br>.token.control,<br>.token.directive,<br>.token.unit,<br>.token.statement,<br>.token.regex,<br>.token.atrule {<br>    color: #728fcb;<br>}</p>
+<p>.token.placeholder,<br>.token.variable {<br>    color: #93abdc;<br>}</p>
+<p>.token.deleted {<br>    text-decoration: line-through;<br>}</p>
+<p>.token.inserted {<br>    border-bottom: 1px dotted #2d2006;<br>    text-decoration: none;<br>}</p>
+<p>.token.italic {<br>    font-style: italic;<br>}</p>
+<p>.token.important,<br>.token.bold {<br>    font-weight: bold;<br>}</p>
+<p>.token.important {<br>    color: #896724;<br>}</p>
+<p>.token.entity {<br>    cursor: help;<br>}</p>
+<p>pre &gt; code.highlight {<br>    outline: .4em solid #896724;<br>    outline-offset: .4em;<br>}</p>
+<p>&#x2F;* overrides color-values for the Line Numbers plugin</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://prismjs.com/plugins/line-numbers/">http://prismjs.com/plugins/line-numbers/</a><br> *&#x2F;<br> .line-numbers .line-numbers-rows {<br> border-right-color: #ece8de;<br> }</li>
+</ul>
+<p>.line-numbers-rows &gt; span:before {<br>    color: #cdc4b1;<br>}</p>
+<p>&#x2F;* overrides color-values for the Line Highlight plugin</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://prismjs.com/plugins/line-highlight/">http://prismjs.com/plugins/line-highlight/</a><br> *&#x2F;<br> .line-highlight {<br> background: rgba(45, 32, 6, 0.2);<br> background: -webkit-linear-gradient(left, rgba(45, 32, 6, 0.2) 70%, rgba(45, 32, 6, 0));<br> background: linear-gradient(to right, rgba(45, 32, 6, 0.2) 70%, rgba(45, 32, 6, 0));<br> }</li>
+</ul>
+<p>修改這個CSS文件為</p>
+<h2 id="x2F-新添加的內容-1"><a href="#x2F-新添加的內容-1" class="headerlink" title="&#x2F;* 新添加的內容"></a>&#x2F;* 新添加的內容</h2><p>  –hl-color                  代碼框字體顔色 【必須】 (把下面 pre[class*&#x3D;”language-“]的 color 複製到這裏來)<br>  –hl-bg                     代碼框背景色 【必須】 (把下面 pre[class*&#x3D;”language-“]的 background複製到這裏來)<br>  –hltools-bg: #321a0f       代碼框頂部工具欄背景色 【可選】(如果你關掉了 copy、lang 和 shrink,可不用配置這個）<br>  –hltools-color: #fff       代碼框頂部工具欄字體顔色 【可選】(如果你關掉了 copy、lang 和 shrink,可不用配置這個）<br>  –hlnumber-bg: #221a0f      代碼框行數背景色 【可選】(如果已經關掉 line_number,可以不用配置這個)<br>  –hlnumber-color: #fff      代碼框行數字體顔色 【可選】 (如果已經關掉 line_number,可以不用配置這個)<br>  –hlscrollbar-bg: #d3af86   代碼框滾動條顔色 【可選】（默認為主題主顔色）<br>  –hlexpand-bg: #d3af86      代碼框底部展開背景色 【可選】(如果已經關掉 highlight_height_limit,可以不用配置這個)<br>*&#x2F;</p>
+<p>:root {<br>  –hl-color: #728fcb;<br>  –hl-bg: #faf8f5;<br>  –hltools-bg: xxxxxxx;<br>  –hltools-color: xxxxxxx;<br>  –hlnumber-bg: xxxxxxx;<br>  –hlnumber-color: xxxxxxxx;<br>  –hlscrollbar-bg: xxxxx;<br>  –hlexpand-bg: xxxxxxx<br>}</p>
+<p>&#x2F;* ————————————- *&#x2F;</p>
+<p>&#x2F;* 這些可以刪除（可留着，如果有衝突，請刪除） <em>&#x2F;<br>&#x2F;</em> ————————————- <em>&#x2F;<br>code[class</em>&#x3D;”language-“],<br>pre[class*&#x3D;”language-“] {<br>    font-family: Consolas, Menlo, Monaco, “Andale Mono WT”, “Andale Mono”, “Lucida Console”, “Lucida Sans Typewriter”, “DejaVu Sans Mono”, “Bitstream Vera Sans Mono”, “Liberation Mono”, “Nimbus Mono L”, “Courier New”, Courier, monospace;<br>    font-size: 14px;<br>    line-height: 1.375;<br>    direction: ltr;<br>    text-align: left;<br>    white-space: pre;<br>    word-spacing: normal;<br>    word-break: normal;</p>
+<pre><code>-moz-tab-size: 4;
+-o-tab-size: 4;
+tab-size: 4;
+
+-webkit-hyphens: none;
+-moz-hyphens: none;
+-ms-hyphens: none;
+hyphens: none;
+background: #faf8f5;
+color: #728fcb;
+</code></pre>
+<p>}</p>
+<p>pre &gt; code[class*&#x3D;”language-“] {<br>    font-size: 1em;<br>}</p>
+<p>pre[class*&#x3D;”language-“]::-moz-selection, pre[class*&#x3D;”language-“] ::-moz-selection,<br>code[class*&#x3D;”language-“]::-moz-selection, code[class*&#x3D;”language-“] ::-moz-selection {<br>    text-shadow: none;<br>    background: #faf8f5;<br>}</p>
+<p>pre[class*&#x3D;”language-“]::selection, pre[class*&#x3D;”language-“] ::selection,<br>code[class*&#x3D;”language-“]::selection, code[class*&#x3D;”language-“] ::selection {<br>    text-shadow: none;<br>    background: #faf8f5;<br>}</p>
+<p>&#x2F;* Code blocks <em>&#x2F;<br>pre[class</em>&#x3D;”language-“] {<br>    padding: 1em;<br>    margin: .5em 0;<br>    overflow: auto;<br>}</p>
+<p>&#x2F;* Inline code <em>&#x2F;<br>:not(pre) &gt; code[class</em>&#x3D;”language-“] {<br>    padding: .1em;<br>    border-radius: .3em;<br>}<br>&#x2F;* ————————————- <em>&#x2F;<br>&#x2F;</em> 到這裏為止，可以刪除 *&#x2F;</p>
+<p>.token.comment,<br>.token.prolog,<br>.token.doctype,<br>.token.cdata {<br>    color: #b6ad9a;<br>}</p>
+<p>.token.punctuation {<br>    color: #b6ad9a;<br>}</p>
+<p>.token.namespace {<br>    opacity: .7;<br>}</p>
+<p>.token.tag,<br>.token.operator,<br>.token.number {<br>    color: #063289;<br>}</p>
+<p>.token.property,<br>.token.function {<br>    color: #b29762;<br>}</p>
+<p>.token.tag-id,<br>.token.selector,<br>.token.atrule-id {<br>    color: #2d2006;<br>}</p>
+<p>code.language-javascript,<br>.token.attr-name {<br>    color: #896724;<br>}</p>
+<p>code.language-css,<br>code.language-scss,<br>.token.boolean,<br>.token.string,<br>.token.entity,<br>.token.url,<br>.language-css .token.string,<br>.language-scss .token.string,<br>.style .token.string,<br>.token.attr-value,<br>.token.keyword,<br>.token.control,<br>.token.directive,<br>.token.unit,<br>.token.statement,<br>.token.regex,<br>.token.atrule {<br>    color: #728fcb;<br>}</p>
+<p>.token.placeholder,<br>.token.variable {<br>    color: #93abdc;<br>}</p>
+<p>.token.deleted {<br>    text-decoration: line-through;<br>}</p>
+<p>.token.inserted {<br>    border-bottom: 1px dotted #2d2006;<br>    text-decoration: none;<br>}</p>
+<p>.token.italic {<br>    font-style: italic;<br>}</p>
+<p>.token.important,<br>.token.bold {<br>    font-weight: bold;<br>}</p>
+<p>.token.important {<br>    color: #896724;<br>}</p>
+<p>.token.entity {<br>    cursor: help;<br>}</p>
+<p>pre &gt; code.highlight {<br>    outline: .4em solid #896724;<br>    outline-offset: .4em;<br>}</p>
+<p>&#x2F;* overrides color-values for the Line Numbers plugin</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://prismjs.com/plugins/line-numbers/">http://prismjs.com/plugins/line-numbers/</a><br> *&#x2F;<br> .line-numbers .line-numbers-rows {<br> border-right-color: #ece8de;<br> }</li>
+</ul>
+<p>.line-numbers-rows &gt; span:before {<br>    color: #cdc4b1;<br>}</p>
+<p>&#x2F;* overrides color-values for the Line Highlight plugin</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://prismjs.com/plugins/line-highlight/">http://prismjs.com/plugins/line-highlight/</a><br> *&#x2F;<br> .line-highlight {<br> background: rgba(45, 32, 6, 0.2);<br> background: -webkit-linear-gradient(left, rgba(45, 32, 6, 0.2) 70%, rgba(45, 32, 6, 0));<br> background: linear-gradient(to right, rgba(45, 32, 6, 0.2) 70%, rgba(45, 32, 6, 0));<br> }</li>
+</ul>
+<p>引入文件</p>
+<p>修改主題配置文件</p>
+<p>inject:<br>  head:<br>    - <link rel="stylesheet" href="/self/duotone.css"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">mhy&amp;&amp;lxq</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/05/04/blog3/">http://example.com/2022/05/04/blog3/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/%E5%9C%B0%E7%90%83%E4%B9%8B%E7%99%8C1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> Donate</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/05/04/memory/"><img class="prev-cover" src="https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">⭐相册⭐</div></div></a></div><div class="next-post pull-right"><a href="/2022/05/04/blog2/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">socket编程实现tcp服务器_C/C++</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/%E5%9C%B0%E7%90%83%E4%B9%8B%E7%99%8C1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">mhy&amp;&amp;lxq</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/mhy-666" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2367290636@qq.com" target="_blank" title="Email"><i class="fas fa-qq"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://www.zhihu.com" target="_blank" title="zhihu"><i class="fa-brands fa-zhihu"></i></a><a class="social-icon" href="https://weibo.com/" target="_blank" title="Weibo"><i class="fa-brands fa-weibo"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">这里是用户交互技术Lab2作业展示，欢迎您的观看！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#x2F-%E6%96%B0%E6%B7%BB%E5%8A%A0%E7%9A%84%E5%85%A7%E5%AE%B9"><span class="toc-number">1.</span> <span class="toc-text">&#x2F;* 新添加的內容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#x2F-%E6%96%B0%E6%B7%BB%E5%8A%A0%E7%9A%84%E5%85%A7%E5%AE%B9-1"><span class="toc-number">2.</span> <span class="toc-text">&#x2F;* 新添加的內容</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/04/memory/" title="⭐相册⭐"><img src="https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="⭐相册⭐"/></a><div class="content"><a class="title" href="/2022/05/04/memory/" title="⭐相册⭐">⭐相册⭐</a><time datetime="2022-05-04T05:15:14.219Z" title="Created 2022-05-04 13:15:14">2022-05-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/04/blog3/" title="自定义代码配色">自定义代码配色</a><time datetime="2022-05-03T17:25:12.000Z" title="Created 2022-05-04 01:25:12">2022-05-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/04/blog2/" title="socket编程实现tcp服务器_C/C++">socket编程实现tcp服务器_C/C++</a><time datetime="2022-05-03T17:25:05.000Z" title="Created 2022-05-04 01:25:05">2022-05-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/04/blog1/" title="Butterfly 安装文档(六) 进阶教程">Butterfly 安装文档(六) 进阶教程</a><time datetime="2022-05-03T17:22:20.000Z" title="Created 2022-05-04 01:22:20">2022-05-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/03/award/" title="⭐荣誉奖状⭐"><img src="https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="⭐荣誉奖状⭐"/></a><div class="content"><a class="title" href="/2022/05/03/award/" title="⭐荣誉奖状⭐">⭐荣誉奖状⭐</a><time datetime="2022-05-03T13:13:38.734Z" title="Created 2022-05-03 21:13:38">2022-05-03</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By mhy&&lxq</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎来到我的个人主页 <a target="_blank" rel="noopener" href="https://butterfly.js.org/">主页</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">简</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="Chat"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'http://example.com/2022/05/04/blog3/'
+    this.page.identifier = '2022/05/04/blog3/'
+    this.page.title = '自定义代码配色'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+}
+
+if ('Valine' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
