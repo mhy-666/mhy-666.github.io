@@ -1,0 +1,592 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>YOLOV5教程 | 个人主页</title><meta name="author" content="mhy&amp;&amp;lxq"><meta name="copyright" content="mhy&amp;&amp;lxq"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents Ultralytics  open-source research into">
+<meta property="og:type" content="article">
+<meta property="og:title" content="YOLOV5教程">
+<meta property="og:url" content="http://example.com/2022/05/04/blog1/index.html">
+<meta property="og:site_name" content="个人主页">
+<meta property="og:description" content="YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents Ultralytics  open-source research into">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/%E5%9C%B0%E7%90%83%E4%B9%8B%E7%99%8C1.jpg">
+<meta property="article:published_time" content="2022-05-03T17:22:20.000Z">
+<meta property="article:modified_time" content="2022-05-04T06:08:57.549Z">
+<meta property="article:author" content="mhy&amp;&amp;lxq">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/%E5%9C%B0%E7%90%83%E4%B9%8B%E7%99%8C1.jpg"><link rel="shortcut icon" href="/img/LOGO.png"><link rel="canonical" href="http://example.com/2022/05/04/blog1/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'YOLOV5教程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-05-04 14:08:57'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/%E5%9C%B0%E7%90%83%E4%B9%8B%E7%99%8C1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-search"></i><span> Search</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page" href="/2022/05/03/award/"><i class="fa-fw fas fa-crown"></i><span> Award</span></a></div><div class="menus_item"><a class="site-page" href="/2022/05/03/memory/"><i class="fa-fw fas fa-image"></i><span> Memory</span></a></div><div class="menus_item"><a class="site-page" href="/2022/05/03/track/"><i class="fa-fw fas fa-school"></i><span> Track</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">个人主页</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-search"></i><span> Search</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page" href="/2022/05/03/award/"><i class="fa-fw fas fa-crown"></i><span> Award</span></a></div><div class="menus_item"><a class="site-page" href="/2022/05/03/memory/"><i class="fa-fw fas fa-image"></i><span> Memory</span></a></div><div class="menus_item"><a class="site-page" href="/2022/05/03/track/"><i class="fa-fw fas fa-school"></i><span> Track</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">YOLOV5教程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-05-03T17:22:20.000Z" title="Created 2022-05-04 01:22:20">2022-05-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-05-04T06:08:57.549Z" title="Updated 2022-05-04 14:08:57">2022-05-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="YOLOV5教程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div align="center">
+<p>
+   <a align="left" href="https://ultralytics.com/yolov5" target="_blank">
+   <img width="850" src="https://github.com/ultralytics/yolov5/releases/download/v1.0/splash.jpg"></a>
+</p>
+<br>
+<div>
+   <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/actions"><img src="https://github.com/ultralytics/yolov5/workflows/CI%20CPU%20testing/badge.svg" alt="CI CPU testing"></a>
+   <a target="_blank" rel="noopener" href="https://zenodo.org/badge/latestdoi/264818686"><img src="https://zenodo.org/badge/264818686.svg" alt="YOLOv5 Citation"></a>
+   <a target="_blank" rel="noopener" href="https://hub.docker.com/r/ultralytics/yolov5"><img src="https://img.shields.io/docker/pulls/ultralytics/yolov5?logo=docker" alt="Docker Pulls"></a>
+   <br>
+   <a target="_blank" rel="noopener" href="https://colab.research.google.com/github/ultralytics/yolov5/blob/master/tutorial.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+   <a target="_blank" rel="noopener" href="https://www.kaggle.com/ultralytics/yolov5"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open In Kaggle"></a>
+   <a target="_blank" rel="noopener" href="https://join.slack.com/t/ultralytics/shared_invite/zt-w29ei8bp-jczz7QYUmDtgo6r6KcMIAg"><img src="https://img.shields.io/badge/Slack-Join_Forum-blue.svg?logo=slack" alt="Join Forum"></a>
+</div>
+
+
+<br>
+
+<p>
+YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a target="_blank" rel="noopener" href="https://ultralytics.com">Ultralytics</a>
+ open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
+</p>
+
+
+<div align="center">
+   <a target="_blank" rel="noopener" href="https://github.com/ultralytics">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-github.png" width="2%"/>
+   </a>
+   <img width="2%" />
+   <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/ultralytics">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-linkedin.png" width="2%"/>
+   </a>
+   <img width="2%" />
+   <a target="_blank" rel="noopener" href="https://twitter.com/ultralytics">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-twitter.png" width="2%"/>
+   </a>
+   <img width="2%" />
+   <a target="_blank" rel="noopener" href="https://www.producthunt.com/@glenn_jocher">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-producthunt.png" width="2%"/>
+   </a>
+   <img width="2%" />
+   <a target="_blank" rel="noopener" href="https://youtube.com/ultralytics">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-youtube.png" width="2%"/>
+   </a>
+   <img width="2%" />
+   <a target="_blank" rel="noopener" href="https://www.facebook.com/ultralytics">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-facebook.png" width="2%"/>
+   </a>
+   <img width="2%" />
+   <a target="_blank" rel="noopener" href="https://www.instagram.com/ultralytics/">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-instagram.png" width="2%"/>
+   </a>
+</div>
+
+
+<!--
+<a align="center" href="https://ultralytics.com/yolov5" target="_blank">
+<img width="800" src="https://github.com/ultralytics/yolov5/releases/download/v1.0/banner-api.png"></a>
+-->
+
+</div>
+
+<h2 id="Documentation"><a href="#Documentation" class="headerlink" title="Documentation"></a><div align="center">Documentation</div></h2><p>See the <a target="_blank" rel="noopener" href="https://docs.ultralytics.com/">YOLOv5 Docs</a> for full documentation on training, testing and deployment.</p>
+<h2 id="Quick-Start-Examples"><a href="#Quick-Start-Examples" class="headerlink" title="Quick Start Examples"></a><div align="center">Quick Start Examples</div></h2><details open>
+<summary>Install</summary>
+
+
+<p>Clone repo and install <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/blob/master/requirements.txt">requirements.txt</a> in a<br><a target="_blank" rel="noopener" href="https://www.python.org/"><strong>Python&gt;&#x3D;3.7.0</strong></a> environment, including<br><a target="_blank" rel="noopener" href="https://pytorch.org/get-started/locally/"><strong>PyTorch&gt;&#x3D;1.7</strong></a>.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/ultralytics/yolov5  <span class="comment"># clone</span></span><br><span class="line"><span class="built_in">cd</span> yolov5</span><br><span class="line">pip install -r requirements.txt  <span class="comment"># install</span></span><br></pre></td></tr></table></figure>
+
+</details>
+
+<details open>
+<summary>Inference</summary>
+
+
+<p>Inference with YOLOv5 and <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/36">PyTorch Hub</a><br>. <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/tree/master/models">Models</a> download automatically from the latest<br>YOLOv5 <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">release</a>.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line"><span class="comment"># Model</span></span><br><span class="line">model = torch.hub.load(<span class="string">&#x27;ultralytics/yolov5&#x27;</span>, <span class="string">&#x27;yolov5s&#x27;</span>)  <span class="comment"># or yolov5m, yolov5l, yolov5x, custom</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Images</span></span><br><span class="line">img = <span class="string">&#x27;https://ultralytics.com/images/zidane.jpg&#x27;</span>  <span class="comment"># or file, Path, PIL, OpenCV, numpy, list</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Inference</span></span><br><span class="line">results = model(img)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Results</span></span><br><span class="line">results.<span class="built_in">print</span>()  <span class="comment"># or .show(), .save(), .crop(), .pandas(), etc.</span></span><br></pre></td></tr></table></figure>
+
+</details>
+
+
+
+<details>
+<summary>Inference with detect.py</summary>
+
+
+<p><code>detect.py</code> runs inference on a variety of sources, downloading <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/tree/master/models">models</a> automatically from<br>the latest YOLOv5 <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">release</a> and saving results to <code>runs/detect</code>.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">python detect.py --<span class="built_in">source</span> 0  <span class="comment"># webcam</span></span><br><span class="line">                          img.jpg  <span class="comment"># image</span></span><br><span class="line">                          vid.mp4  <span class="comment"># video</span></span><br><span class="line">                          path/  <span class="comment"># directory</span></span><br><span class="line">                          path/*.jpg  <span class="comment"># glob</span></span><br><span class="line">                          <span class="string">&#x27;https://youtu.be/Zgi9g1ksQHc&#x27;</span>  <span class="comment"># YouTube</span></span><br><span class="line">                          <span class="string">&#x27;rtsp://example.com/media.mp4&#x27;</span>  <span class="comment"># RTSP, RTMP, HTTP stream</span></span><br></pre></td></tr></table></figure>
+
+</details>
+
+<details>
+<summary>Training</summary>
+
+
+<p>The commands below reproduce YOLOv5 <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/blob/master/data/scripts/get_coco.sh">COCO</a><br>results. <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/tree/master/models">Models</a><br>and <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/tree/master/data">datasets</a> download automatically from the latest<br>YOLOv5 <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">release</a>. Training times for YOLOv5n&#x2F;s&#x2F;m&#x2F;l&#x2F;x are<br>1&#x2F;2&#x2F;4&#x2F;6&#x2F;8 days on a V100 GPU (<a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/475">Multi-GPU</a> times faster). Use the<br>largest <code>--batch-size</code> possible, or pass <code>--batch-size -1</code> for<br>YOLOv5 <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/pull/5092">AutoBatch</a>. Batch sizes shown for V100-16GB.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">python train.py --data coco.yaml --cfg yolov5n.yaml --weights <span class="string">&#x27;&#x27;</span> --batch-size 128</span><br><span class="line">                                       yolov5s                                64</span><br><span class="line">                                       yolov5m                                40</span><br><span class="line">                                       yolov5l                                24</span><br><span class="line">                                       yolov5x                                16</span><br></pre></td></tr></table></figure>
+
+<img width="800" src="https://user-images.githubusercontent.com/26833433/90222759-949d8800-ddc1-11ea-9fa1-1c97eed2b963.png">
+
+</details>
+
+<details open>
+<summary>Tutorials</summary>
+
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data">Train Custom Data</a>&amp;nbsp; 🚀 RECOMMENDED</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/wiki/Tips-for-Best-Training-Results">Tips for Best Training Results</a>&amp;nbsp; ☘️<br>RECOMMENDED</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/1289">Weights &amp; Biases Logging</a>&amp;nbsp; 🌟 NEW</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/4975">Roboflow for Datasets, Labeling, and Active Learning</a>&amp;nbsp; 🌟 NEW</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/475">Multi-GPU Training</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/36">PyTorch Hub</a>&amp;nbsp; ⭐ NEW</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/251">TFLite, ONNX, CoreML, TensorRT Export</a> 🚀</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/303">Test-Time Augmentation (TTA)</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/318">Model Ensembling</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/304">Model Pruning&#x2F;Sparsity</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/607">Hyperparameter Evolution</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/1314">Transfer Learning with Frozen Layers</a>&amp;nbsp; ⭐ NEW</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/wang-xinyu/tensorrtx">TensorRT Deployment</a></li>
+</ul>
+</details>
+
+<h2 id="Environments"><a href="#Environments" class="headerlink" title="Environments"></a><div align="center">Environments</div></h2><p>Get started in seconds with our verified environments. Click each icon below for details.</p>
+<div align="center">
+    <a target="_blank" rel="noopener" href="https://colab.research.google.com/github/ultralytics/yolov5/blob/master/tutorial.ipynb">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-colab-small.png" width="15%"/>
+    </a>
+    <a target="_blank" rel="noopener" href="https://www.kaggle.com/ultralytics/yolov5">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-kaggle-small.png" width="15%"/>
+    </a>
+    <a target="_blank" rel="noopener" href="https://hub.docker.com/r/ultralytics/yolov5">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-docker-small.png" width="15%"/>
+    </a>
+    <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/wiki/AWS-Quickstart">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-aws-small.png" width="15%"/>
+    </a>
+    <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/wiki/GCP-Quickstart">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-gcp-small.png" width="15%"/>
+    </a>
+</div>
+
+
+<h2 id="Integrations"><a href="#Integrations" class="headerlink" title="Integrations"></a><div align="center">Integrations</div></h2><div align="center">
+    <a target="_blank" rel="noopener" href="https://wandb.ai/site?utm_campaign=repo_yolo_readme">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-wb-long.png" width="49%"/>
+    </a>
+    <a target="_blank" rel="noopener" href="https://roboflow.com/?ref=ultralytics">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-roboflow-long.png" width="49%"/>
+    </a>
+</div>
+
+
+<table>
+<thead>
+<tr>
+<th align="center">Weights and Biases</th>
+<th align="center">Roboflow ⭐ NEW</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Automatically track and visualize all your YOLOv5 training runs in the cloud with <a target="_blank" rel="noopener" href="https://wandb.ai/site?utm_campaign=repo_yolo_readme">Weights &amp; Biases</a></td>
+<td align="center">Label and export your custom datasets directly to YOLOv5 for training with <a target="_blank" rel="noopener" href="https://roboflow.com/?ref=ultralytics">Roboflow</a></td>
+</tr>
+</tbody></table>
+<!-- ## <div align="center">Compete and Win</div>
+
+We are super excited about our first-ever Ultralytics YOLOv5 🚀 EXPORT Competition with **$10,000** in cash prizes!
+
+<p align="center">
+  <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/discussions/3213">
+  <img width="850" src="https://github.com/ultralytics/yolov5/releases/download/v1.0/banner-export-competition.png"></a>
+</p> -->
+
+
+<h2 id="Why-YOLOv5"><a href="#Why-YOLOv5" class="headerlink" title="Why YOLOv5"></a><div align="center">Why YOLOv5</div></h2><p align="left"><img width="800" src="https://user-images.githubusercontent.com/26833433/155040763-93c22a27-347c-4e3c-847a-8094621d3f4e.png"></p>
+<details>
+  <summary>YOLOv5-P5 640 Figure (click to expand)</summary>
+
+
+<p align="left"><img width="800" src="https://user-images.githubusercontent.com/26833433/155040757-ce0934a3-06a6-43dc-a979-2edbbd69ea0e.png"></p>
+
+</details>
+
+<details>
+  <summary>Figure Notes (click to expand)</summary>
+
+
+<ul>
+<li><strong>COCO AP val</strong> denotes <a href="mailto:&#109;&#x41;&#80;&#64;&#48;&#x2e;&#53;">&#109;&#x41;&#80;&#64;&#48;&#x2e;&#53;</a>:0.95 metric measured on the 5000-image <a target="_blank" rel="noopener" href="http://cocodataset.org/">COCO val2017</a> dataset over various inference sizes from 256 to 1536.</li>
+<li><strong>GPU Speed</strong> measures average inference time per image on <a target="_blank" rel="noopener" href="http://cocodataset.org/">COCO val2017</a> dataset using a <a target="_blank" rel="noopener" href="https://aws.amazon.com/ec2/instance-types/p3/">AWS p3.2xlarge</a> V100 instance at batch-size 32.</li>
+<li><strong>EfficientDet</strong> data from <a target="_blank" rel="noopener" href="https://github.com/google/automl">google&#x2F;automl</a> at batch size 8.</li>
+<li><strong>Reproduce</strong> by <code>python val.py --task study --data coco.yaml --iou 0.7 --weights yolov5n6.pt yolov5s6.pt yolov5m6.pt yolov5l6.pt yolov5x6.pt</code></details></li>
+</ul>
+<h3 id="Pretrained-Checkpoints"><a href="#Pretrained-Checkpoints" class="headerlink" title="Pretrained Checkpoints"></a>Pretrained Checkpoints</h3><table>
+<thead>
+<tr>
+<th>Model</th>
+<th>size<br><sup>(pixels)</th>
+<th>mAP<sup>val<br>0.5:0.95</th>
+<th>mAP<sup>val<br>0.5</th>
+<th>Speed<br><sup>CPU b1<br>(ms)</th>
+<th>Speed<br><sup>V100 b1<br>(ms)</th>
+<th>Speed<br><sup>V100 b32<br>(ms)</th>
+<th>params<br><sup>(M)</th>
+<th>FLOPs<br><sup>@640 (B)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">YOLOv5n</a></td>
+<td>640</td>
+<td>28.0</td>
+<td>45.7</td>
+<td><strong>45</strong></td>
+<td><strong>6.3</strong></td>
+<td><strong>0.6</strong></td>
+<td><strong>1.9</strong></td>
+<td><strong>4.5</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">YOLOv5s</a></td>
+<td>640</td>
+<td>37.4</td>
+<td>56.8</td>
+<td>98</td>
+<td>6.4</td>
+<td>0.9</td>
+<td>7.2</td>
+<td>16.5</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">YOLOv5m</a></td>
+<td>640</td>
+<td>45.4</td>
+<td>64.1</td>
+<td>224</td>
+<td>8.2</td>
+<td>1.7</td>
+<td>21.2</td>
+<td>49.0</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">YOLOv5l</a></td>
+<td>640</td>
+<td>49.0</td>
+<td>67.3</td>
+<td>430</td>
+<td>10.1</td>
+<td>2.7</td>
+<td>46.5</td>
+<td>109.1</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">YOLOv5x</a></td>
+<td>640</td>
+<td>50.7</td>
+<td>68.9</td>
+<td>766</td>
+<td>12.1</td>
+<td>4.8</td>
+<td>86.7</td>
+<td>205.7</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">YOLOv5n6</a></td>
+<td>1280</td>
+<td>36.0</td>
+<td>54.4</td>
+<td>153</td>
+<td>8.1</td>
+<td>2.1</td>
+<td>3.2</td>
+<td>4.6</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">YOLOv5s6</a></td>
+<td>1280</td>
+<td>44.8</td>
+<td>63.7</td>
+<td>385</td>
+<td>8.2</td>
+<td>3.6</td>
+<td>12.6</td>
+<td>16.8</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">YOLOv5m6</a></td>
+<td>1280</td>
+<td>51.3</td>
+<td>69.3</td>
+<td>887</td>
+<td>11.1</td>
+<td>6.8</td>
+<td>35.7</td>
+<td>50.0</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">YOLOv5l6</a></td>
+<td>1280</td>
+<td>53.7</td>
+<td>71.3</td>
+<td>1784</td>
+<td>15.8</td>
+<td>10.5</td>
+<td>76.8</td>
+<td>111.4</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/releases">YOLOv5x6</a><br>+ <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/303">TTA</a></td>
+<td>1280<br>1536</td>
+<td>55.0<br><strong>55.8</strong></td>
+<td>72.7<br><strong>72.7</strong></td>
+<td>3136<br>-</td>
+<td>26.2<br>-</td>
+<td>19.4<br>-</td>
+<td>140.7<br>-</td>
+<td>209.8<br>-</td>
+</tr>
+</tbody></table>
+<details>
+  <summary>Table Notes (click to expand)</summary>
+
+
+<ul>
+<li>All checkpoints are trained to 300 epochs with default settings. Nano and Small models use <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/blob/master/data/hyps/hyp.scratch-low.yaml">hyp.scratch-low.yaml</a> hyps, all others use <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/blob/master/data/hyps/hyp.scratch-high.yaml">hyp.scratch-high.yaml</a>.</li>
+<li><strong>mAP<sup>val</sup></strong> values are for single-model single-scale on <a target="_blank" rel="noopener" href="http://cocodataset.org/">COCO val2017</a> dataset.<br>Reproduce by <code>python val.py --data coco.yaml --img 640 --conf 0.001 --iou 0.65</code></li>
+<li><strong>Speed</strong> averaged over COCO val images using a <a target="_blank" rel="noopener" href="https://aws.amazon.com/ec2/instance-types/p3/">AWS p3.2xlarge</a> instance. NMS times (~1 ms&#x2F;img) not included.<br>Reproduce by <code>python val.py --data coco.yaml --img 640 --task speed --batch 1</code></li>
+<li><strong>TTA</strong> <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues/303">Test Time Augmentation</a> includes reflection and scale augmentations.<br>Reproduce by <code>python val.py --data coco.yaml --img 1536 --iou 0.7 --augment</code></li>
+</ul>
+</details>
+
+<h2 id="Contribute"><a href="#Contribute" class="headerlink" title="Contribute"></a><div align="center">Contribute</div></h2><p>We love your input! We want to make contributing to YOLOv5 as easy and transparent as possible. Please see our <a href="CONTRIBUTING.md">Contributing Guide</a> to get started, and fill out the <a target="_blank" rel="noopener" href="https://ultralytics.com/survey?utm_source=github&utm_medium=social&utm_campaign=Survey">YOLOv5 Survey</a> to send us feedback on your experiences. Thank you to all our contributors!</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/graphs/contributors"><img src="https://opencollective.com/ultralytics/contributors.svg?width=990" /></a></p>
+<h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a><div align="center">Contact</div></h2><p>For YOLOv5 bugs and feature requests please visit <a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5/issues">GitHub Issues</a>. For business inquiries or<br>professional support requests please visit <a target="_blank" rel="noopener" href="https://ultralytics.com/contact">https://ultralytics.com/contact</a>.</p>
+<br>
+
+<div align="center">
+    <a target="_blank" rel="noopener" href="https://github.com/ultralytics">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-github.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/ultralytics">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-linkedin.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a target="_blank" rel="noopener" href="https://twitter.com/ultralytics">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-twitter.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a target="_blank" rel="noopener" href="https://www.producthunt.com/@glenn_jocher">
+    <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-producthunt.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a target="_blank" rel="noopener" href="https://youtube.com/ultralytics">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-youtube.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a target="_blank" rel="noopener" href="https://www.facebook.com/ultralytics">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-facebook.png" width="3%"/>
+    </a>
+    <img width="3%" />
+    <a target="_blank" rel="noopener" href="https://www.instagram.com/ultralytics/">
+        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-instagram.png" width="3%"/>
+    </a>
+</div>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">mhy&amp;&amp;lxq</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/05/04/blog1/">http://example.com/2022/05/04/blog1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/%E5%9C%B0%E7%90%83%E4%B9%8B%E7%99%8C1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> Donate</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/05/04/blog2/"><img class="prev-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">MediaPipe配置教程</div></div></a></div><div class="next-post pull-right"><a href="/2022/05/03/award/"><img class="next-cover" src="https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">⭐荣誉奖状⭐</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/%E5%9C%B0%E7%90%83%E4%B9%8B%E7%99%8C1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">mhy&amp;&amp;lxq</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/mhy-666" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2367290636@qq.com" target="_blank" title="Email"><i class="fas fa-qq"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://www.zhihu.com" target="_blank" title="zhihu"><i class="fa-brands fa-zhihu"></i></a><a class="social-icon" href="https://weibo.com/" target="_blank" title="Weibo"><i class="fa-brands fa-weibo"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">这里是用户交互技术Lab2作业展示，欢迎您的观看！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Documentation"><span class="toc-number">1.</span> <span class="toc-text">Documentation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start-Examples"><span class="toc-number">2.</span> <span class="toc-text">Quick Start Examples</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Environments"><span class="toc-number">3.</span> <span class="toc-text">Environments</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Integrations"><span class="toc-number">4.</span> <span class="toc-text">Integrations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Why-YOLOv5"><span class="toc-number">5.</span> <span class="toc-text">Why YOLOv5</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Pretrained-Checkpoints"><span class="toc-number">5.1.</span> <span class="toc-text">Pretrained Checkpoints</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Contribute"><span class="toc-number">6.</span> <span class="toc-text">Contribute</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Contact"><span class="toc-number">7.</span> <span class="toc-text">Contact</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/04/memory/" title="🎬相册🎬"><img src="https://i.loli.net/2019/11/10/3wkO7fuQpgda6vz.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="🎬相册🎬"/></a><div class="content"><a class="title" href="/2022/05/04/memory/" title="🎬相册🎬">🎬相册🎬</a><time datetime="2022-05-04T05:15:14.219Z" title="Created 2022-05-04 13:15:14">2022-05-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/04/blog3/" title="Pytorch官方文档">Pytorch官方文档</a><time datetime="2022-05-03T17:25:12.000Z" title="Created 2022-05-04 01:25:12">2022-05-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/04/blog2/" title="MediaPipe配置教程">MediaPipe配置教程</a><time datetime="2022-05-03T17:25:05.000Z" title="Created 2022-05-04 01:25:05">2022-05-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/04/blog1/" title="YOLOV5教程">YOLOV5教程</a><time datetime="2022-05-03T17:22:20.000Z" title="Created 2022-05-04 01:22:20">2022-05-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/03/award/" title="⭐荣誉奖状⭐"><img src="https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="⭐荣誉奖状⭐"/></a><div class="content"><a class="title" href="/2022/05/03/award/" title="⭐荣誉奖状⭐">⭐荣誉奖状⭐</a><time datetime="2022-05-03T13:13:38.734Z" title="Created 2022-05-03 21:13:38">2022-05-03</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By mhy&&lxq</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎来到我的个人主页 <a target="_blank" rel="noopener" href="https://butterfly.js.org/">主页</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">简</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="Chat"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'http://example.com/2022/05/04/blog1/'
+    this.page.identifier = '2022/05/04/blog1/'
+    this.page.title = 'YOLOV5教程'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+}
+
+if ('Valine' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
